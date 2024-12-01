@@ -3,27 +3,38 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!-- Define um dicionário de recursos, utilizado para armazenar estilos e recursos reutilizáveis em um projeto MAUI. -->
 
-	<Style TargetType="ActivityIndicator">
-		<Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
+    <!-- Estilo para ActivityIndicator -->
+    <Style TargetType="ActivityIndicator">
+        <!-- Define a cor do indicador de atividade baseado no tema claro ou escuro do aplicativo. -->
+        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
 	</Style>
 
-	<Style TargetType="IndicatorView">
+    <!-- Estilo para IndicatorView -->
+    <Style TargetType="IndicatorView">
+        <!-- Define a cor dos indicadores e dos indicadores selecionados para diferentes temas. -->
 		<Setter Property="IndicatorColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}"/>
 		<Setter Property="SelectedIndicatorColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray100}}"/>
 	</Style>
 
-	<Style TargetType="Border">
+    <!-- Estilo para Border -->
+    <Style TargetType="Border">
+        <!-- Define o contorno, formato e espessura da borda. -->
 		<Setter Property="Stroke" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}" />
 		<Setter Property="StrokeShape" Value="Rectangle"/>
 		<Setter Property="StrokeThickness" Value="1"/>
 	</Style>
 
+    <!-- Estilo para BoxView -->
 	<Style TargetType="BoxView">
+        <!-- Define a cor de fundo do BoxView, adaptada ao tema do aplicativo. -->
 		<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
 	</Style>
 
+    <!-- Estilo para Button -->
 	<Style TargetType="Button">
+        <!-- Define as propriedades visuais do botão, como cores, fontes, bordas e espaçamento. -->
 		<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource PrimaryDarkText}}" />
 		<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
 		<Setter Property="FontFamily" Value="OpenSansRegular"/>
@@ -33,12 +44,15 @@
 		<Setter Property="Padding" Value="14,10"/>
 		<Setter Property="MinimumHeightRequest" Value="44"/>
 		<Setter Property="MinimumWidthRequest" Value="44"/>
-		<Setter Property="VisualStateManager.VisualStateGroups">
+
+        <!-- Define os estados visuais do botão (Normal, Disabled, etc.) -->
+        <Setter Property="VisualStateManager.VisualStateGroups">
 			<VisualStateGroupList>
 				<VisualStateGroup x:Name="CommonStates">
 					<VisualState x:Name="Normal" />
 					<VisualState x:Name="Disabled">
 						<VisualState.Setters>
+                            <!-- Ajusta as propriedades para o estado desabilitado. -->
 							<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
 							<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}" />
 						</VisualState.Setters>
@@ -183,7 +197,9 @@
 		<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
 	</Style>
 
+    <!-- Exemplo de estilo para Label com uma chave específica (Headline) -->
 	<Style TargetType="Label" x:Key="Headline">
+        <!-- Estilo utilizado para manchetes, com tamanho de fonte grande e alinhamento centralizado. -->
 		<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource MidnightBlue}, Dark={StaticResource White}}" />
 		<Setter Property="FontSize" Value="32" />
 		<Setter Property="HorizontalOptions" Value="Center" />
@@ -225,7 +241,9 @@
 		</Setter>
 	</Style>
 
-	<Style TargetType="ProgressBar">
+    <!-- Estilo para ProgressBar -->
+    <Style TargetType="ProgressBar">
+        <!-- Define a cor da barra de progresso e seus estados visuais. -->
 		<Setter Property="ProgressColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
 		<Setter Property="VisualStateManager.VisualStateGroups">
 			<VisualStateGroupList>
@@ -233,7 +251,8 @@
 					<VisualState x:Name="Normal" />
 					<VisualState x:Name="Disabled">
 						<VisualState.Setters>
-							<Setter Property="ProgressColor" Value="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}" />
+                            <!-- Ajusta as propriedades para o estado desabilitado. -->
+                            <Setter Property="ProgressColor" Value="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}" />
 						</VisualState.Setters>
 					</VisualState>
 				</VisualStateGroup>

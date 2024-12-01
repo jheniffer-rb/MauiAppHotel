@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiAppHotel.Models
+namespace MauiAppHotel.Models // Namespace que representa o local onde a classe se encontra
 {
-    public class Quarto
+    public class Quarto // Classe que representa um quarto do hotel
     {
         public string Descricao { get; set; } // Propriedade que representa a descrição do quarto
 

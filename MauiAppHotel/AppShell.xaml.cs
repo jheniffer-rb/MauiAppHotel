@@ -1,10 +1,10 @@
 ﻿namespace MauiAppHotel
 {
-    public partial class AppShell : Shell
+    public partial class AppShell : Shell // Define a classe AppShell que herda de Shell
     {
-        public AppShell()
+        public AppShell() // Construtor da classe AppShell
         {
-            InitializeComponent();
+            InitializeComponent(); // Inicializa os componentes da aplicação definidos no arquivo XAML.
         }
     }
 }

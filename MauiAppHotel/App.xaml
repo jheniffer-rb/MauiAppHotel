@@ -1,22 +1,35 @@
-﻿﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MauiAppHotel"
              x:Class="MauiAppHotel.App">
+    <!-- Define o arquivo como um elemento de configuração de aplicação em .NET MAUI. -->
 
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-				<ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-			</ResourceDictionary.MergedDictionaries>
+    <Application.Resources>
+        <!-- Declara recursos globais que podem ser usados em toda a aplicação, 
+             como estilos, cores e dicionários de recursos. -->
+        <ResourceDictionary>
+            <!-- Container para armazenar os recursos da aplicação. -->
 
-			<Style TargetType="Label">
-				<Setter Property="VerticalTextAlignment" Value="Center" />
-				<Setter Property="HorizontalTextAlignment" Value="Center" />
-			</Style>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Permite importar dicionários de recursos externos, 
+                     como estilos e cores definidos separadamente. -->
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <!-- Importa definições de cores personalizadas. -->
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                <!-- Importa definições de estilos personalizadas. -->
+            </ResourceDictionary.MergedDictionaries>
 
-		</ResourceDictionary>
-	</Application.Resources>
+            <Style TargetType="Label">
+                <!-- Define um estilo padrão para todos os elementos do tipo Label na aplicação. -->
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <!-- Define o alinhamento vertical do texto como centralizado. -->
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <!-- Define o alinhamento horizontal do texto como centralizado. -->
+            </Style>
+            <!-- Este estilo se aplica automaticamente a todos os Labels, a menos que seja sobrescrito. -->
+
+        </ResourceDictionary>
+    </Application.Resources>
 
 </Application>

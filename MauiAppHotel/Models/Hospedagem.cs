@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiAppHotel.Models
+namespace MauiAppHotel.Models // Namespace que representa o local onde a classe se encontra
 {
-    public class Hospedagem
+    public class Hospedagem // Classe que representa a hospedagem de um cliente no hotel
     {
         public Quarto QuartoSelecionado { get; set; } // Representa o quarto selecionado para a hospedagem
         public int QntAdultos { get; set; } // Representa a quantidade de adultos na hospedagem
@@ -20,7 +20,7 @@ namespace MauiAppHotel.Models
             get => DataCheckOut.Subtract(DataCheckIn).Days; // Calcula a quantidade de dias de estadia com base nas datas de check-in e check-out
         }
 
-        public double ValorTotal
+        public double ValorTotal // Propriedade que representa o valor total da hospedagem
         {
             get
             {

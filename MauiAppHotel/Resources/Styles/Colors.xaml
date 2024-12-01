@@ -6,42 +6,75 @@
 
 	<!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
+	<!-- Define a cor "Verde" com o valor "Green" -->
 	<Color x:Key="Verde">Green</Color>
 
+	<!-- Define a cor "Primary" com o valor "#512BD4" -->
 	<Color x:Key="Primary">#512BD4</Color>
+	<!-- Define a cor "PrimaryDark" com o valor "#ac99ea" -->
 	<Color x:Key="PrimaryDark">#ac99ea</Color>
+	<!-- Define a cor "PrimaryDarkText" com o valor "#242424" -->
 	<Color x:Key="PrimaryDarkText">#242424</Color>
+	<!-- Define a cor "Secondary" com o valor "#DFD8F7" -->
 	<Color x:Key="Secondary">#DFD8F7</Color>
+	<!-- Define a cor "SecondaryDarkText" com o valor "#9880e5" -->
 	<Color x:Key="SecondaryDarkText">#9880e5</Color>
+	<!-- Define a cor "Tertiary" com o valor "#2B0B98" -->
 	<Color x:Key="Tertiary">#2B0B98</Color>
 
+	<!-- Define a cor "White" com o valor "White" -->
 	<Color x:Key="White">White</Color>
+	<!-- Define a cor "Black" com o valor "Black" -->
 	<Color x:Key="Black">Black</Color>
+	<!-- Define a cor "Magenta" com o valor "#D600AA" -->
 	<Color x:Key="Magenta">#D600AA</Color>
+	<!-- Define a cor "MidnightBlue" com o valor "#190649" -->
 	<Color x:Key="MidnightBlue">#190649</Color>
+	<!-- Define a cor "OffBlack" com o valor "#1f1f1f" -->
 	<Color x:Key="OffBlack">#1f1f1f</Color>
 
+	<!-- Define a cor "Gray100" com o valor "#E1E1E1" -->
 	<Color x:Key="Gray100">#E1E1E1</Color>
+	<!-- Define a cor "Gray200" com o valor "#C8C8C8" -->
 	<Color x:Key="Gray200">#C8C8C8</Color>
+	<!-- Define a cor "Gray300" com o valor "#ACACAC" -->
 	<Color x:Key="Gray300">#ACACAC</Color>
+	<!-- Define a cor "Gray400" com o valor "#919191" -->
 	<Color x:Key="Gray400">#919191</Color>
+	<!-- Define a cor "Gray500" com o valor "#6E6E6E" -->
 	<Color x:Key="Gray500">#6E6E6E</Color>
+	<!-- Define a cor "Gray600" com o valor "#404040" -->
 	<Color x:Key="Gray600">#404040</Color>
+	<!-- Define a cor "Gray900" com o valor "#212121" -->
 	<Color x:Key="Gray900">#212121</Color>
+	<!-- Define a cor "Gray950" com o valor "#141414" -->
 	<Color x:Key="Gray950">#141414</Color>
 
+	<!-- Define um pincel sólido "PrimaryBrush" com a cor definida em "Primary" -->
 	<SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+	<!-- Define um pincel sólido "SecondaryBrush" com a cor definida em "Secondary" -->
 	<SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
+	<!-- Define um pincel sólido "TertiaryBrush" com a cor definida em "Tertiary" -->
 	<SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
+	<!-- Define um pincel sólido "WhiteBrush" com a cor definida em "White" -->
 	<SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"/>
+	<!-- Define um pincel sólido "BlackBrush" com a cor definida em "Black" -->
 	<SolidColorBrush x:Key="BlackBrush" Color="{StaticResource Black}"/>
 
+	<!-- Define um pincel sólido "Gray100Brush" com a cor definida em "Gray100" -->
 	<SolidColorBrush x:Key="Gray100Brush" Color="{StaticResource Gray100}"/>
+	<!-- Define um pincel sólido "Gray200Brush" com a cor definida em "Gray200" -->
 	<SolidColorBrush x:Key="Gray200Brush" Color="{StaticResource Gray200}"/>
+	<!-- Define um pincel sólido "Gray300Brush" com a cor definida em "Gray300" -->
 	<SolidColorBrush x:Key="Gray300Brush" Color="{StaticResource Gray300}"/>
+	<!-- Define um pincel sólido "Gray400Brush" com a cor definida em "Gray400" -->
 	<SolidColorBrush x:Key="Gray400Brush" Color="{StaticResource Gray400}"/>
+	<!-- Define um pincel sólido "Gray500Brush" com a cor definida em "Gray500" -->
 	<SolidColorBrush x:Key="Gray500Brush" Color="{StaticResource Gray500}"/>
+	<!-- Define um pincel sólido "Gray600Brush" com a cor definida em "Gray600" -->
 	<SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
+	<!-- Define um pincel sólido "Gray900Brush" com a cor definida em "Gray900" -->
 	<SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
+	<!-- Define um pincel sólido "Gray950Brush" com a cor definida em "Gray950" -->
 	<SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
 </ResourceDictionary>
